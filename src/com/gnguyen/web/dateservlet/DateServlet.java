@@ -18,11 +18,13 @@ import javax.servlet.http.HttpServletResponse;
 		initParams = {	@WebInitParam(name="id",value="1"),
 						@WebInitParam(name="name",value="george")})
 
+
 public class DateServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	public static final String HTML_START = "<html><body>";
 	public static final String HTML_END = "</body></html>";
        
+	
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -35,7 +37,9 @@ public class DateServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		PrintWriter out = response.getWriter();
+		Date date = new Date();
+		out.println(HTML_START + "<h2>Today's date is: </h2><br/><h3>" + date + "</h3>"+HTML_END);
 	}
 
 	/**
