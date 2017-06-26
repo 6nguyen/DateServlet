@@ -13,11 +13,14 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class DateServlet
  */
-
+// NOTE:  Long @WebServlet urlPatterns and initParams won't run
 @WebServlet(description = "Simple Date Servlet",
-		urlPatterns = {"/DateServlet", "/DateServlet.do"},
-		initParams = {	@WebInitParam(name="id",value="1"),
-						@WebInitParam(name="name",value="george")})
+		urlPatterns = {"/DateServlet", "/DateServlet.do"}
+		/*
+		,initParams = {	@WebInitParam(name="id",value="1"),
+						@WebInitParam(name="name",value="george")}
+		*/
+						)
 
 //@WebServlet("/DateServlet")
 public class DateServlet extends HttpServlet {
