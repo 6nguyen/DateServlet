@@ -10,7 +10,18 @@ Converting the above string to upper case: <%= new String("hello world").toUpper
 <br/><br/>
 
 Is 40 > 20?  <%= 40>20 %>
+<br/><br/>
 
+I can count to 5, look!
+<%
+	for (int i=1; i<=5; i++) {
+		if (i == 5){
+			out.println("<br/>" + i + ", told you!");
+		} else {
+			out.println("<br/>" + i + "...");
+		}
+	}
+%>
 
 </body>
 </html>
