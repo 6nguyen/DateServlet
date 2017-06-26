@@ -17,8 +17,11 @@ import javax.servlet.http.HttpServletResponse;
 		urlPatterns = {"/DateServlet", "/DateServlet.do"},
 		initParams = {	@WebInitParam(name="id",value="1"),
 						@WebInitParam(name="name",value="george")})
+
 public class DateServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	public static final String HTML_START = "<html><body>";
+	public static final String HTML_END = "</body></html>";
        
     /**
      * @see HttpServlet#HttpServlet()
