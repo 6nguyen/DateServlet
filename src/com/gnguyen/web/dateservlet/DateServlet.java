@@ -13,12 +13,13 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class DateServlet
  */
+/*
 @WebServlet(description = "Simple Date Servlet",
 		urlPatterns = {"/DateServlet", "/DateServlet.do"},
 		initParams = {	@WebInitParam(name="id",value="1"),
 						@WebInitParam(name="name",value="george")})
-
-
+*/
+@WebServlet("/DateServlet")
 public class DateServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	public static final String HTML_START = "<html><body>";
